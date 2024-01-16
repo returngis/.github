@@ -3,6 +3,7 @@
     "description": "return(GiS); Organization CI starter workflow.",
     "iconName": "octicon rocket",
     "categories": [
+        "Continuous integration",
         "AspNetCore",
         "DotNetCoreWorker",
         "DotNetConsole"
