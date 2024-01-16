@@ -7,8 +7,5 @@
         "AspNetCore",
         "DotNetCoreWorker",
         "DotNetConsole"
-    ],
-    "filePatterns": [
-        "*.csproj"
     ]
 }
