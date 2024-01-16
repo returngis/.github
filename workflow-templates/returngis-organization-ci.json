@@ -1,0 +1,13 @@
+{
+    "name": "return(GiS); Organization Workflow",
+    "description": "return(GiS); Organization CI starter workflow.",
+    "iconName": "octicon rocket",
+    "categories": [
+        "AspNetCore",
+        "DotNetCoreWorker",
+        "DotNetConsole"
+    ],
+    "filePatterns": [
+        "*.csproj"
+    ]
+}
