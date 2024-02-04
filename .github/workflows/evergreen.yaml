@@ -5,9 +5,7 @@ on:
   schedule:
     - cron: '3 2 1 * *'
 
-permissions:
-  issues: write
-  contents: write
+permissions: write-all  
 
 jobs:
   evergreen:
