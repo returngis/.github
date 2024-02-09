@@ -26,4 +26,4 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           ORGANIZATION: ${{ env.ORGANIZATION }}
-          DRY_RUN: true
+          #DRY_RUN: true
