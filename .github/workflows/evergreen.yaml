@@ -4,9 +4,8 @@ on:
   schedule:
     - cron: '3 2 1 * *'
 
-permissions:
-  issues: write
-  
+env:
+  ORGANIZATION: returngis
 
 jobs:
   evergreen:
@@ -14,9 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Generate GitHub application token
+        id: generate-token
+        uses: peter-murray/workflow-application-token-action@v3
+        with:
+          application_id: ${{ vars.GH_APPLICATION_ID }}
+          application_private_key: ${{ secrets.GH_APPLICATION_PRIVATE_KEY }}
+          organization: ${{ env.ORGANIZATION }}
+          permissions: 'contents:write, pull_requests:write'
       - name: Run evergreen action
         uses: github/evergreen@v1.4.0
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ORGANIZATION: returngis
-          # DRY_RUN: true
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          ORGANIZATION: ${{ env.ORGANIZATION }}
+          DRY_RUN: true
