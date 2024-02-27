@@ -22,7 +22,7 @@ jobs:
           organization: ${{ env.ORGANIZATION }}
           permissions: 'contents:write, pull_requests:write'
       - name: Run evergreen action
-        uses: github/evergreen@v1.4.0
+        uses: github/evergreen@v1.6.0
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           ORGANIZATION: ${{ env.ORGANIZATION }}
