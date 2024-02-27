@@ -3,10 +3,7 @@
     "description": "CI starter workflow.",
     "iconName": "octicon heart-fill",
     "categories": [
-        "continuous-integration",
-        "AspNetCore",
-        "DotNetCoreWorker",
-        "DotNetConsole"
+        "C#"
     ],
     "filePatterns":[
         "*.csproj*"
