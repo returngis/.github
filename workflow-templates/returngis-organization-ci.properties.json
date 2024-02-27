@@ -3,8 +3,7 @@
     "description": "CI starter workflow.",
     "iconName": "octicon heart-fill",
     "categories": [
-        "C#",
-        "Automation"
+        "C#"        
     ],
     "filePatterns":[
         "*.csproj*"
