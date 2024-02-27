@@ -9,6 +9,6 @@
         "DotNetConsole"
     ],
     "filePatterns":[
-        "*.csproj*
+        "*.csproj*"
     ]
 }
