@@ -1,9 +1,9 @@
 {
     "name": "return(GiS); Organization Workflow",
-    "description": "return(GiS); Organization CI starter workflow.",
+    "description": "CI starter workflow.",
     "iconName": "octicon heart-fill",
     "categories": [
-        "Continuous integration",
+        "continuous-integration",
         "AspNetCore",
         "DotNetCoreWorker",
         "DotNetConsole"
