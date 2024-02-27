@@ -1,7 +1,7 @@
 {
     "name": "return(GiS); Organization Workflow",
     "description": "return(GiS); Organization CI starter workflow.",
-    "iconName": "octicon rocket",
+    "iconName": "octicon heart-fill",
     "categories": [
         "Continuous integration",
         "AspNetCore",
