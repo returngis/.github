@@ -9,9 +9,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run a one-line script
+    steps: 
+     - name: Say hello!
         run: echo Hello from return(GiS); Organization
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x      
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
